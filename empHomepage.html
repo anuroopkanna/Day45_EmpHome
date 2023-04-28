@@ -30,13 +30,36 @@ href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600
     <div class="emp-detail-text"> 
         Employee Details 
     </div> 
-    <a href="./new_payroll_form.html" class="add-button">
+    <a href="./payrollform.html" class="add-button">
     <img src="./Images/add-24px.svg"  alt="" width="20%" height="20%">Add User</a> 
-</div> <!-- header-content -->
-
+</div> 
 
 </div>
-    <script ref="./JS/EmpHome.js"></script>
+<table id="display" class="table">
+    <tr>
+        <th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Start Date</th>
+            <th>Actions</th>
+        </th>
+    </tr>
+    <td><img class="profile" alt="" src="./Images/Ellipse 1.png"  width="30%" height="30%"></td>
+    <td>Anuroop Kannaiah</td> 
+                    <td>Male</td> 
+                    <td><div class='dept-label'>HR</div>
+                        <div class='dept-label'>Finance</div>
+                    </td>
+                    <td>3000000</td>
+                    <td>1 Nov 2020</td>
+                    <td> 
+                        <img id="1" onclick="remove(this)" alt="delete" src="./Images/delete-black-18dp.svg"width="3%" height="3%">
+                        <img id="1" alt="edit" onclick="update(this)" src="./Images/create-black-18dp.svg"width="3%" height="3%"> 
+                    </td> 
+                </tr>  
+</table>
+<script ref="./JS/EmpHome.js"></script>
 </body>
 </html>
-Footer
