@@ -33,3 +33,39 @@ const createInnerHtml = () => {
     }
     document.querySelector('#display').innerHTML = innerHtml;
 }
+const getDepartmentHtml = (departmentList) => {
+    let departmentHtml = '';
+    for(const department of departmentList){
+      departmentHtml = `${departmentHtml} <div class='dept-label'>${department}</div>`
+    }
+    return departmentHtml
+}
+const createEmployeePayrollJSON = () => {
+    let employeePayrollListLocal = [
+      {
+        _name: 'Swathi',
+        _gender: 'Female',
+        _department: [
+          'HR'
+        ],
+        _salary: 350000,
+        _startDate: '20 Jul 2016',
+        _note: 'Test',
+        _id: new Date().getTime(),
+        _profileImage: '/Images/Ellipse-4.png' 
+      },
+      {
+        _name: 'Karthik',
+        _gender: 'Male',
+        _department: [
+          'Engineer'
+        ],
+        _salary: 400000,
+        _startDate: '02 Mar 2020',
+        _note: 'Test to JSON',
+        _id: new Date().getTime(),
+        _profileImage: '/Images/Ellipse -3.png'
+      }
+    ];
+    return localStorage.getItem("employeePayrollList");
+}
