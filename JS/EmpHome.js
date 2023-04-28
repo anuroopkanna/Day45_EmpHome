@@ -50,7 +50,7 @@ const createEmployeePayrollJSON = () => {
         ],
         _salary: 350000,
         _startDate: '20 Jul 2016',
-        _note: 'Test',
+        _note: '',
         _id: new Date().getTime(),
         _profileImage: '/Images/Ellipse-4.png' 
       },
@@ -62,7 +62,7 @@ const createEmployeePayrollJSON = () => {
         ],
         _salary: 400000,
         _startDate: '02 Mar 2020',
-        _note: 'Test to JSON',
+        _note: '',
         _id: new Date().getTime(),
         _profileImage: '/Images/Ellipse -3.png'
       }

@@ -1,4 +1,4 @@
-body {
+html body {
     margin: 0; 
     height: 100%;
  }
@@ -102,7 +102,7 @@ body {
     /* border: 1px solid #dddddd; */
  }
  th{
-    background: #42515F 8% 8% no-repeat padding-box; 
+    background: #3c5369 8% 8% no-repeat padding-box; 
     border-radius: 0px 0px 0px 0px;
     text-align: left; 
     font: normal normal medium 18px/24px Roboto; 
