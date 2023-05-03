@@ -13,6 +13,8 @@ rel="stylesheet">
 href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600
 &display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/HomePage.css">
+    <!-- <script src="./JS/EmpHome.js"></script>
+<script src="./JS/EmpPayroll.js"></script> -->
 </head>
 <body>
     <header class="header-content header"> 
@@ -27,20 +29,39 @@ href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600
 <div class="main-content">
  <!-- UC 1 --> 
  <div class="header-content"> 
-    <div class="emp-detail-text"> 
+     <div class="emp-detail-text"> 
         Employee Details 
-    </div> 
-    <a href="./payrollform.html" class="add-button">
-    <img src="./Images/add-24px.svg"  alt="" width="20%" height="20%">Add User</a> 
-</div> 
+     </div> 
+     <a href="./payrollform.html" class="add-button">
+     <img src="./Images/add-24px.svg"  alt="" width="20%" height="20%">Add User</a> 
+   </div> 
+ 
 
-</div>
-<div class="table-main">
  <table id="display" class="table">
-     
+     <tr>
+        <th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Start Date</th>
+            <th>Actions</th>
+        </th>
+     </tr>
+     <td><img class="profile" alt="" src="./Images/Ellipse -2.png"  width="20%" height="20%"></td>
+     <td>Anuroop Kannaiah</td> 
+                    <td>Male</td> 
+                    <td><div class='dept-label'>HR</div>
+                        <div class='dept-label'>Finance</div>
+                    </td>
+                    <td>3000000</td>
+                    <td>1 Nov 2020</td>
+                    <td> 
+                        <img id="1" onclick="remove(this)" alt="delete" src="./Images/delete-black-18dp.svg"width="20%" height="20%">
+                        <img id="1" alt="edit" onclick="update(this)" src="./Images/create-black-18dp.svg"width="20%" height="20%"> 
+                    </td> 
+                </tr>  
  </table>
 </div>
-<script src="./JS/EmpHome.js"></script>
-<script src="./JS/EmpPayroll.js"></script>
 </body>
 </html>
